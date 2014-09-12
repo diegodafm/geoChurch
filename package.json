@@ -1,0 +1,22 @@
+{
+  "name": "geoChurch",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/diegodafm/geoChurch.git"
+  },
+  "author": "diego.dafm@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/diegodafm/geoChurch/issues"
+  },
+  "homepage": "https://github.com/diegodafm/geoChurch",
+  "devDependencies": {
+    "angular-ui-router": "~0.2.10"
+  }
+}
