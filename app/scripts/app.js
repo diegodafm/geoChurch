@@ -2,6 +2,7 @@ define([
     'angular',
     'ui.router',
     'ng.router',
+    'ui.bootstrap',
     './controllers/index'
  ], function (ng) {
      'use strict';
@@ -10,5 +11,6 @@ define([
          'ui.router',
          'ngRoute',
          'app.controllers'
+
      ]);
  });

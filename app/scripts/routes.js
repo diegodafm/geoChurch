@@ -14,8 +14,8 @@ define([
          $stateProvider
              .state('home', {
                  url: '/home',
-                 templateUrl: 'templates/header.html',
-                 controller: 'HomeController'
+                 templateUrl: 'templates/main.html',
+                 controller: 'MainController'
              });
      }]);
  });

@@ -3,7 +3,12 @@
  */
 define(['./module'], function (controllers) {
     'use strict';
-    controllers.controller('HomeController', [function ($scope) {
+    controllers.controller('MainController', ['$scope' , function ($scope) {
+
+        $scope.calendar = new Date();
+
+        console.log('scope');
+        console.log($scope);
         console.log('HomeController controller');
     }]);
 });
