@@ -16,6 +16,11 @@ define([
                  url: '/home',
                  templateUrl: 'templates/main.html',
                  controller: 'MainController'
+             })
+             .state('map', {
+                 url: '/map',
+                 templateUrl: 'templates/map.html',
+                 controller: 'MainController'
              });
      }]);
  });
