@@ -1,6 +1,9 @@
 /**
  * Created by Diego Alisson on 9/13/14.
  */
-define(['./homeController'], function () {
+define([
+    './mainController',
+    './mapController'
+    ], function () {
     console.log('controllers index');
 });

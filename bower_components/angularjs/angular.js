@@ -18590,13 +18590,13 @@ var ngClassDirective = classDirective('', true);
  * @example
    <example>
      <file name="index.html">
-        <ol ng-init="names=['John', 'Mary', 'Cate', 'Suz']">
+        <ol3 ng-init="names=['John', 'Mary', 'Cate', 'Suz']">
           <li ng-repeat="name in names">
            <span ng-class-odd="'odd'" ng-class-even="'even'">
              {{name}}
            </span>
           </li>
-        </ol>
+        </ol3>
      </file>
      <file name="style.css">
        .odd {
@@ -18638,13 +18638,13 @@ var ngClassOddDirective = classDirective('Odd', 0);
  * @example
    <example>
      <file name="index.html">
-        <ol ng-init="names=['John', 'Mary', 'Cate', 'Suz']">
+        <ol3 ng-init="names=['John', 'Mary', 'Cate', 'Suz']">
           <li ng-repeat="name in names">
            <span ng-class-odd="'odd'" ng-class-even="'even'">
              {{name}} &nbsp; &nbsp; &nbsp;
            </span>
           </li>
-        </ol>
+        </ol3>
      </file>
      <file name="style.css">
        .odd {

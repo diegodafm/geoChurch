@@ -263,8 +263,8 @@ else
             // "paragraphs" that are wrapped in non-block-level tags, such as anchors,
             // phrase emphasis, and spans. The list of tags we're looking for is
             // hard-coded:
-            var block_tags_a = "p|div|h[1-6]|blockquote|pre|table|dl|ol|ul|script|noscript|form|fieldset|iframe|math|ins|del"
-            var block_tags_b = "p|div|h[1-6]|blockquote|pre|table|dl|ol|ul|script|noscript|form|fieldset|iframe|math"
+            var block_tags_a = "p|div|h[1-6]|blockquote|pre|table|dl|ol3|ul|script|noscript|form|fieldset|iframe|math|ins|del"
+            var block_tags_b = "p|div|h[1-6]|blockquote|pre|table|dl|ol3|ul|script|noscript|form|fieldset|iframe|math"
 
             // First, look for nested blocks, e.g.:
             //   <div>
@@ -775,7 +775,7 @@ else
             // http://bugs.webkit.org/show_bug.cgi?id=11231
             text += "~0";
 
-            // Re-usable pattern to match any entirel ul or ol list:
+            // Re-usable pattern to match any entirel ul or ol3 list:
 
             /*
             var whole_list = /
@@ -842,7 +842,7 @@ else
             //  Process the contents of a single ordered or unordered list, splitting it
             //  into individual list items.
             //
-            //  list_type is either "ul" or "ol".
+            //  list_type is either "ul" or "ol3".
 
             // The $g_list_level global keeps track of when we're inside a list.
             // Each time we enter a list, we increment it; when we leave a list,

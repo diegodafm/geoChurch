@@ -8,12 +8,11 @@
             jquery          : 'vendor/jquery/dist/jquery.min',
             domReady        : 'vendor/requirejs-domready/domReady',
             angular         : 'vendor/angularjs/angular.min',
-            goog            : 'vendor/requirejs-plugins/src/goog',
-            openlayers      : 'vendor/openlayers3/src/ol/ol',
+            OpenLayers      : 'vendor/openLayers2/OpenLayers',
+            googleMaps      : 'http://maps.google.com/maps/api/js?v=3&sensor=false',
             'ui.router'     : 'vendor/angular-ui-router/release/angular-ui-router.min',
             'ng.router'     : 'vendor/angular-route/angular-route.min',
-            'ui.bootstrap'  : 'vendor/angular-bootstrap/ui-bootstrap-tpls.min',
-            'ng.openlayers' : 'vendor/angular-openlayers-directive/dist/angular-openlayers-directive.min'
+            'ui.bootstrap'  : 'vendor/angular-bootstrap/ui-bootstrap-tpls.min'
         };
 
         var shim = {
@@ -21,21 +20,24 @@
                 deps: ['jquery'],
                 exports: 'angular'
             },
-            'ol': {
-                deps: ['goog','openlayers'],
-                exports: 'angular'
+            'OpenLayers': {
+                exports: 'OpenLayers'
+            },
+            googleMaps:{
+                exports: 'googleMaps'
             },
             'ui.router'     : ['angular'],
             'ng.router'     : ['angular'],
-            'ui.bootstrap'  : ['angular'],
-            'ng.openlayers' : ['angular', 'ol']
+            'ui.bootstrap'  : ['angular']
         };
 
         requirejs.config( {
             "baseUrl": 'scripts',
             "paths": paths,
             "shim": shim,
-            "deps": ['./bootstrap']
+            "deps": [
+                './bootstrap'
+            ]
         });
     }
     )();

@@ -20,7 +20,7 @@ define([
              .state('map', {
                  url: '/map',
                  templateUrl: 'templates/map.html',
-                 controller: 'MainController'
+                 controller: 'MapController'
              });
      }]);
  });
