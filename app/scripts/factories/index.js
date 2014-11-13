@@ -1,10 +1,7 @@
 /**
  * Created by Diego Alisson on 9/13/14.
  */
-define([
-    './mainController',
-    './mapController'
-    ],
+define([],
     function () {
         console.log('controllers index');
     });

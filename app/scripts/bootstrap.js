@@ -6,10 +6,18 @@ define([
         'require',
         'angular',
         'app',
-        'routes'
-    ], function (require, ng) {
+        'routes',
+        'socketIO'
+    ], function (require, ng, app, routes, socketIO) {
         'use strict';
         require(['domReady!'], function (document) {
+
+            var namespace = socketIO.connect('/namespace');
+            namespace.on('news', function (data) {
+                console.log(data);
+            });
+
+
             ng.bootstrap(document, ['app']);
         });
     });

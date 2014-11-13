@@ -8,7 +8,7 @@ define([
      'use strict';
      return app.config(['$routeProvider','$stateProvider', function ($routeProvider, $stateProvider) {
          $routeProvider.otherwise({
-             redirectTo: '/'
+             redirectTo: '/home'
          });
 
          $stateProvider
